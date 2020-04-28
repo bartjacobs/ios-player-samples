@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3DA1362AF2782EE6F30A87 /* Pods_AppleTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC97D94A4800A1A284FE653 /* Pods_AppleTV.framework */; };
 		4910CD9B1C91DB4B00016798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910CD9A1C91DB4B00016798 /* AppDelegate.swift */; };
 		4910CD9D1C91DB4B00016798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910CD9C1C91DB4B00016798 /* ViewController.swift */; };
 		4910CDA01C91DB4B00016798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4910CD9E1C91DB4B00016798 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 		4910CDA11C91DB4B00016798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4910CDA31C91DB4B00016798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0C9400206C291E007A716A /* SampleTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTabBarItemView.swift; sourceTree = "<group>"; };
+		ADEE01210153B7EE923471E0 /* Pods-AppleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV.release.xcconfig"; path = "Target Support Files/Pods-AppleTV/Pods-AppleTV.release.xcconfig"; sourceTree = "<group>"; };
+		CECF2F26984CB22064EFF731 /* Pods-AppleTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV.debug.xcconfig"; path = "Target Support Files/Pods-AppleTV/Pods-AppleTV.debug.xcconfig"; sourceTree = "<group>"; };
+		FFC97D94A4800A1A284FE653 /* Pods_AppleTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3DA1362AF2782EE6F30A87 /* Pods_AppleTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43631A7B128486BFE9BD18F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFC97D94A4800A1A284FE653 /* Pods_AppleTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4910CD8E1C91DB4A00016798 = {
 			isa = PBXGroup;
 			children = (
 				4910CD991C91DB4B00016798 /* AppleTV */,
 				4910CD981C91DB4A00016798 /* Products */,
+				D9D72B7C72CA46F64B42EEAE /* Pods */,
+				43631A7B128486BFE9BD18F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +92,15 @@
 			path = AppleTV;
 			sourceTree = "<group>";
 		};
+		D9D72B7C72CA46F64B42EEAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CECF2F26984CB22064EFF731 /* Pods-AppleTV.debug.xcconfig */,
+				ADEE01210153B7EE923471E0 /* Pods-AppleTV.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,10 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4910CDA61C91DB4B00016798 /* Build configuration list for PBXNativeTarget "AppleTV" */;
 			buildPhases = (
+				3BCD1E5E8D8155DD3059A5AB /* [CP] Check Pods Manifest.lock */,
 				4910CD931C91DB4A00016798 /* Sources */,
 				4910CD941C91DB4A00016798 /* Frameworks */,
 				4910CD951C91DB4A00016798 /* Resources */,
 				AA0C93FF206BCECE007A716A /* Embed Frameworks */,
+				9DBF9CB2C29F10149CD56C16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +169,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BCD1E5E8D8155DD3059A5AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppleTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DBF9CB2C29F10149CD56C16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleTV/Pods-AppleTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleTV/Pods-AppleTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppleTV/Pods-AppleTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4910CD931C91DB4A00016798 /* Sources */ = {
@@ -274,6 +342,7 @@
 		};
 		4910CDA71C91DB4B00016798 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CECF2F26984CB22064EFF731 /* Pods-AppleTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -292,6 +361,7 @@
 		};
 		4910CDA81C91DB4B00016798 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADEE01210153B7EE923471E0 /* Pods-AppleTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
