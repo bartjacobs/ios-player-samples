@@ -13,6 +13,7 @@
 		4910CDA01C91DB4B00016798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4910CD9E1C91DB4B00016798 /* Main.storyboard */; };
 		4910CDA21C91DB4B00016798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4910CDA11C91DB4B00016798 /* Assets.xcassets */; };
 		AA0C9401206C291E007A716A /* SampleTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C9400206C291E007A716A /* SampleTabBarItemView.swift */; };
+		CC26C4BA245839C2005CB08F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26C4B9245839C2005CB08F /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		4910CDA31C91DB4B00016798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0C9400206C291E007A716A /* SampleTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTabBarItemView.swift; sourceTree = "<group>"; };
 		ADEE01210153B7EE923471E0 /* Pods-AppleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV.release.xcconfig"; path = "Target Support Files/Pods-AppleTV/Pods-AppleTV.release.xcconfig"; sourceTree = "<group>"; };
+		CC26C4B9245839C2005CB08F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		CECF2F26984CB22064EFF731 /* Pods-AppleTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV.debug.xcconfig"; path = "Target Support Files/Pods-AppleTV/Pods-AppleTV.debug.xcconfig"; sourceTree = "<group>"; };
 		FFC97D94A4800A1A284FE653 /* Pods_AppleTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 			children = (
 				4910CD9A1C91DB4B00016798 /* AppDelegate.swift */,
 				4910CD9C1C91DB4B00016798 /* ViewController.swift */,
+				CC26C4B9245839C2005CB08F /* RootViewController.swift */,
 				AA0C9400206C291E007A716A /* SampleTabBarItemView.swift */,
 				4910CD9E1C91DB4B00016798 /* Main.storyboard */,
 				4910CDA11C91DB4B00016798 /* Assets.xcassets */,
@@ -219,6 +222,7 @@
 			files = (
 				4910CD9D1C91DB4B00016798 /* ViewController.swift in Sources */,
 				4910CD9B1C91DB4B00016798 /* AppDelegate.swift in Sources */,
+				CC26C4BA245839C2005CB08F /* RootViewController.swift in Sources */,
 				AA0C9401206C291E007A716A /* SampleTabBarItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
