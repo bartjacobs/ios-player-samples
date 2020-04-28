@@ -1,0 +1,16 @@
+PODS:
+  - Brightcove-Player-Core/dynamic (6.5.0)
+
+DEPENDENCIES:
+  - Brightcove-Player-Core/dynamic (>= 6.3)
+
+SPEC REPOS:
+  https://github.com/brightcove/BrightcoveSpecs.git:
+    - Brightcove-Player-Core
+
+SPEC CHECKSUMS:
+  Brightcove-Player-Core: ae35735f1a88a0d4d58627c7114e168f552273f6
+
+PODFILE CHECKSUM: ea57713246161f949b99ce9689488f1824c788ca
+
+COCOAPODS: 1.8.4
